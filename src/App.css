@@ -89,3 +89,19 @@
   height: auto;
 
 }
+
+#Visitor{
+  background-color: #29cb97;
+}
+
+#User{
+  background-color: #fec400;
+}
+
+#Sales{
+  background-color: #4c84ff;
+}
+
+#Order{
+  background-color: #ca66ff;
+}

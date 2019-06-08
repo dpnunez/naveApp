@@ -35,7 +35,7 @@ class AppData extends Component{
     const number = this.props.number;
     const bgColor = this.props.color;
     return(
-      <div className='data'>
+      <div className='data' id={name}>
           <img src='https://image.flaticon.com/icons/svg/23/23228.svg'></img>
           <p className='data-number pData'>{number}</p>
           <p className='data-name pData'>{name}</p>
