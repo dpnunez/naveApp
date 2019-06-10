@@ -77,21 +77,26 @@
   top: -1em;
 }
 
-.data img{
+.data-image{
   float: left;
-  position: relative;
-  top: 2em;
-  left: 1em;
-  color: #f4f4f4;
-  max-width:200px;
-  max-height:200px;
-  width: auto;
-  height: auto;
+  /*Duvidas em relação ao alinhamento de uma div dentro de outra div*/
+  margin-top: 1.4em;
+  margin-left: .5em;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
 
 }
 
 #Visitor{
   background-color: #29cb97;
+}
+
+#Visitor img{
+
 }
 
 #User{
@@ -103,5 +108,5 @@
 }
 
 #Order{
-  background-color: #ca66ff;
+  background-color: #ca66ff
 }
