@@ -18,19 +18,15 @@
   background-color: #f4f4f4;
 }
 
-.App{
-  width: 1024px;
-  height: 1024px;
-  margin-left: 15%;
-}
+
 
 
 .App-header {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 2rem;
+  color: #f4f4f4;
 }
 
 
@@ -38,12 +34,13 @@
   border-radius: 15px;
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
   background-color: #29cb97;
+  max-height: 6em;
   width: 20%;
-  margin-right: 5%;
+  margin-right: 3.5%;
+  margin-bottom: 1em;
   display: inline-block;
-  
 }
-
+    
 
 .data p{
   margin-bottom: 5%;
@@ -55,7 +52,7 @@
 
 .data-number{
   font-family: Roboto;
-  font-size: 1.75em;
+  font-size: 1.7em;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -66,7 +63,7 @@
 
 .data-name{
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 100%;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -80,10 +77,10 @@
 .data-image{
   float: left;
   /*Duvidas em relação ao alinhamento de uma div dentro de outra div*/
-  margin-top: 1.4em;
+  margin-top: 2em;
   margin-left: .5em;
-  width: 60px;
-  height: 60px;
+  width: 2.3em;
+  height: 2.3em;
   margin-right: 20px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,4 +106,23 @@
 
 #Order{
   background-color: #ca66ff
+}
+
+h2{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6c6c6c;
+}
+
+.App-traffic-graph{
+  width: 59%;
+  height: 10em;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
+  background-color: #ffffff;
 }

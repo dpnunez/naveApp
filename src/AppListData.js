@@ -10,7 +10,7 @@ function AppData(props){
     const url = props.url;
 
     return(
-      <div className='data' id={name}>
+      <div className={`data`} id={name}>
           <div className='data-image' style={{
                         backgroundImage: `url(${props.url})`
                     }}/>
@@ -27,6 +27,7 @@ function AppListData(props){
       <div className='AppDataBase'>
         {props.dataList.map((data, index) =>
           <AppData key={data.name} name={data.name} number={data.number} url={data.url}/>
+
         )}
       </div>
     )

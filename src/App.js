@@ -5,6 +5,8 @@ import user from './images/user.png';
 import sales from './images/sales.png';
 import order from './images/order.png';
 
+import Container from '@material-ui/core/Container';
+
 class App extends Component{
   state = {
     dataList: [
@@ -25,10 +27,13 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className='Page-Overview'>Page Overview</h1>
-        </header>
-        <AppListData  dataList={this.state.dataList}/>
+        <Container component="main" maxWidth="lg">
+          <header className="App-header">
+            <h1 className='Page-Overview'>Page Overview</h1>
+          </header>
+          <AppListData  dataList={this.state.dataList}/>
+          
+        </Container>
       </div>
     );
   }
