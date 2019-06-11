@@ -32,7 +32,9 @@ class App extends Component{
             <h1 className='Page-Overview'>Page Overview</h1>
           </header>
           <AppListData  dataList={this.state.dataList}/>
-          
+          <div className='App-traffic-graph'>
+            <h2>Site Traffic Overview</h2>
+          </div>
         </Container>
       </div>
     );
