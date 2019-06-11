@@ -5,7 +5,10 @@ import user from './images/user.png';
 import sales from './images/sales.png';
 import order from './images/order.png';
 
+import {Bar} from 'react-chartjs-2';
 import Container from '@material-ui/core/Container';
+import AppDataGraph from './AppDataGraph';
+
 
 class App extends Component{
   state = {
@@ -32,9 +35,7 @@ class App extends Component{
             <h1 className='Page-Overview'>Page Overview</h1>
           </header>
           <AppListData  dataList={this.state.dataList}/>
-          <div className='App-traffic-graph'>
-            <h2>Site Traffic Overview</h2>
-          </div>
+          <AppDataGraph />
         </Container>
       </div>
     );

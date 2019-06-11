@@ -1,4 +1,6 @@
-
+html{
+  background-color: #f4f4f4;
+}
 
 
 .Page-Overview {
@@ -125,4 +127,9 @@ h2{
   border-radius: 15px;
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
   background-color: #ffffff;
+  height: 40%;
+}
+
+Bar{
+  margin-bottom: 2em;
 }
