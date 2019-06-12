@@ -56,7 +56,7 @@ class AppDataGraph extends React.Component{
     }
     render(){
         return (
-          <div className='App-traffic-graph'>
+          <div className='App-traffic-graph sessao'>
             <div className='graph-idem'>
               <h2>Site Traffic Overview</h2>
               <Bar

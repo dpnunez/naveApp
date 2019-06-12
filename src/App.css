@@ -11,7 +11,7 @@ h1,h2{
 /*Titulos das sessões*/
 h2{
   font-size: 100%;
-  padding-top: 2%;
+  padding-top: .5em;
 }
 
 .AppDataBase{
@@ -91,18 +91,112 @@ h2{
 
 
 
+.sessoes{
+  display: flex;
+  justify-content: space-between;
+}
 
-
-
-.App-traffic-graph{
+.sessao{
   border-radius: 15px;
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
   background-color: white;
-  width: 60%;
 }
 
 
+.App-traffic-graph{
+  width: 66%;
+}
 
 .graph-idem{
-  margin: 3%;
+  margin: 2%;
 }
+
+
+
+.App-reports{
+  width: 31%;
+  display: block;
+  /*Relação ao entre os Elementos dentro da div*/
+  align-content: space-between;
+
+}
+
+.App-reports h2{
+  margin-left: .5em;
+}
+
+.reports{
+  padding-left: 4%;
+  padding-right: 4%;
+  height: 75%;
+  max-height: 75%;
+  overflow: auto;
+  border-top: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+      .report{
+        width: 100%;
+        margin-top: .5em;
+        display: inline-flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      .report-image{
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        background-color: #6c6c6c;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-image: url('./images/person.jpg');
+        margin-right: 1em;
+        border-radius: 50%;
+      }
+
+      .report-title{
+        font-size: 1.2em;
+        font-family: Roboto;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        font-weight: bold;
+        letter-spacing: normal;
+        color: #6c6c6c;
+        margin-block-end: .5em;
+        margin-block-start: 0;
+      }
+
+      .report-content{
+        width: 70%;
+      }
+
+      .report-time{
+        font-family: Roboto;
+        font-size: .9em;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: rgba(108, 108, 108, 0.5);
+      }
+
+
+.insert-report{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: .5em;
+}
+
+.insert-report .in{
+  width: 80%;
+}
+
+.insert-report .bt{
+  font-weight: bold;
+}
+
