@@ -56,16 +56,18 @@ class AppDataGraph extends React.Component{
     }
     render(){
         return (
-            <div className='App-traffic-graph'>
-            <h2>Site Traffic Overview</h2>
-            <Bar
-              data={this.state.data}
-              width={2}
-              height={1}
-              options={{
-                maintainAspectRatio: true
-              }}
-            />  
+          <div className='App-traffic-graph'>
+            <div className='graph-idem'>
+              <h2>Site Traffic Overview</h2>
+              <Bar
+                data={this.state.data}
+                width={2}
+                height={1}
+                options={{
+                  maintainAspectRatio: true
+                }}
+              />
+            </div>  
           </div>
         )
     }

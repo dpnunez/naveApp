@@ -3,103 +3,77 @@ html{
 }
 
 
-.Page-Overview {
-  width: 289px;
-  height: 37px;
+h1,h2{
   font-family: Roboto;
-  font-size: 34px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #6c6c6c;
-   
-}
-#root {
-  background-color: #f4f4f4;
+  color: #6c6c6c; 
 }
 
+/*Titulos das sessões*/
+h2{
+  font-size: 100%;
+  padding-top: 2%;
+}
 
-
-
-.App-header {
-  background-color: #f4f4f4;
+.AppDataBase{
   display: flex;
-  flex-direction: column;
-  font-size: 2rem;
-  color: #f4f4f4;
+  justify-content: space-between;
+  margin-bottom: 3%;
 }
-
 
 .data {
+  /*Duvida em relação ao uso da */
+  width: 22%;
   border-radius: 15px;
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
   background-color: #29cb97;
-  max-height: 6em;
-  width: 20%;
-  margin-right: 3.5%;
-  margin-bottom: 1em;
-  display: inline-block;
-}
-    
-
-.data p{
-  margin-bottom: 5%;
-  position: relative;
-  text-align: right;
-  margin-right: 5%;
-  
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-.data-number{
-  font-family: Roboto;
-  font-size: 1.7em;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-
-.data-name{
-  font-family: Roboto;
-  font-size: 100%;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-  position: relative;
-  top: -1em;
+.data-content{
+  display: block;
+  /*Problemas em aproximar as duas infos*/
+  align-content: center;
+  text-align: end;
+  padding-inline-end: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .data-image{
-  float: left;
-  /*Duvidas em relação ao alinhamento de uma div dentro de outra div*/
-  margin-top: 2em;
-  margin-left: .5em;
-  width: 2.3em;
-  height: 2.3em;
-  margin-right: 20px;
+  width: 25%;
+  height: 70%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  flex-shrink: 0;
-
+  background-size: 100%;
+  margin-inline-start: 5%;
 }
 
+.pData{
+  font-family: Roboto;
+  color: white;
+  margin: 0;
+}
+
+
+.data-number{
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.data-name{
+  font-size: 100%;
+}
+
+
+/*Configurando a cor de cada data*/
 #Visitor{
-  background-color: #29cb97;
-}
-
-#Visitor img{
-
+  background-color: #29cb97
 }
 
 #User{
-  background-color: #fec400;
+  background-color: #fec400
 }
 
 #Sales{
@@ -107,29 +81,28 @@ html{
 }
 
 #Order{
-  background-color: #ca66ff
+  background-color: #ca66ff;
 }
 
-h2{
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #6c6c6c;
-}
+
+
+
+
+
+
+
+
+
 
 .App-traffic-graph{
-  width: 59%;
-  height: 10em;
   border-radius: 15px;
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
-  background-color: #ffffff;
-  height: 40%;
+  background-color: white;
+  width: 60%;
 }
 
-Bar{
-  margin-bottom: 2em;
+
+
+.graph-idem{
+  margin: 3%;
 }

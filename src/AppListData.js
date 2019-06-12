@@ -14,8 +14,11 @@ function AppData(props){
           <div className='data-image' style={{
                         backgroundImage: `url(${props.url})`
                     }}/>
-          <p className='data-number pData'>{number}</p>
-          <p className='data-name pData'>{name}</p>
+          <div className='data-content'>
+            <p className='data-number pData'>{number}</p>
+            <p className='data-name pData'>{name}</p>
+          </div>
+          
       </div>
     );
     
