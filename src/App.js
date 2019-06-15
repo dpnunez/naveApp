@@ -39,31 +39,21 @@ class App extends Component{
           "id": 2,
           "user": "NAVER",
           "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-          "message": "In labore reprehenderit tempor laboris laborum consequat tempor qui quis veniam deserunt duis ut.",
-          "time": "51 mins ago"
+          "message": "Voluptate consectetur commodo reprehenderit deserunt aliqua eiusmod fugiat nulla aute mollit anim id.",
+          "time": "56 mins ago"
         },
         {
           "id": 3,
           "user": "NAVER",
           "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-          
-          "time": "49 mins ago"
+          "message": "Voluptate consectetur commodo reprehenderit deserunt aliqua eiusmod fugiat nulla aute mollit anim id.",
+          "time": "56 mins ago"
         },
-        {
-          "id": 4,
-          "user": "NAVER",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-          "message": "Laboris officia ut sunt sint et.",
-          "time": "32 mins ago"
-        },
-        {
-          "id": 5,
-          "user": "NAVER",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-          "message": "Eiusmod mollit qui consectetur anim cupidatat sit fugiat.",
-          "time": "27 mins ago"
-        }
       ]
+
+  }
+
+  onReportAdd = function(){
 
   }
   render(){

@@ -27,7 +27,7 @@ class AppReports extends React.Component{
                 <h2>Reports</h2>
                     <div className='reports'>
                         {this.props.dataReport.map((report) =>(
-                            <Report key={report.id} image={report.image}   name={report.user} 
+                            <Report key={report.id+report.user} image={report.image}   name={report.user} 
                             message={report.message} 
                             time={report.time}/>
                             )    

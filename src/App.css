@@ -1,3 +1,10 @@
+
+@mixin testequebra {
+  @media (min-width: 900px) { @content; }
+}
+
+
+
 html{
   background-color: #f4f4f4;
 }
@@ -15,74 +22,80 @@ h2{
 }
 
 .AppDataBase{
+  flex-flow: row wrap;
   display: flex;
   justify-content: space-between;
   margin-bottom: 3%;
-}
 
-.data {
-  /*Duvida em relação ao uso da */
-  width: 22%;
-  border-radius: 15px;
-  box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
-  background-color: #29cb97;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.data-content{
-  display: block;
-  /*Problemas em aproximar as duas infos*/
-  align-content: center;
-  text-align: end;
-  padding-inline-end: 10%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.data-image{
-  width: 25%;
-  height: 70%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-inline-start: 5%;
-}
-
-.pData{
-  font-family: Roboto;
-  color: white;
-  margin: 0;
+  
 }
 
 
-.data-number{
-  font-weight: bold;
-  font-size: 200%;
-}
 
-.data-name{
-  font-size: 100%;
-}
+      .data {
+        /*Duvida em relação ao uso da */
+        width: 22%;
+        min-width: 150px;
+        border-radius: 15px;
+        box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
+        background-color: #29cb97;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .data-content{
+        display: block;
+        /*Problemas em aproximar as duas infos*/
+        align-content: center;
+        text-align: end;
+        padding-inline-end: 10%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+      }
+
+      .data-image{
+        width: 25%;
+        height: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-inline-start: 5%;
+      }
+
+      .pData{
+        font-family: Roboto;
+        color: white;
+        margin: 0;
+      }
 
 
-/*Configurando a cor de cada data*/
-#Visitor{
-  background-color: #29cb97
-}
+      .data-number{
+        font-weight: bold;
+        font-size: 200%;
+      }
 
-#User{
-  background-color: #fec400
-}
+      .data-name{
+        font-size: 100%;
+      }
 
-#Sales{
-  background-color: #4c84ff;
-}
 
-#Order{
-  background-color: #ca66ff;
-}
+      /*Configurando a cor de cada data*/
+      #Visitor{
+        background-color: #29cb97
+      }
+
+      #User{
+        background-color: #fec400
+      }
+
+      #Sales{
+        background-color: #4c84ff;
+      }
+
+      #Order{
+        background-color: #ca66ff;
+      }
 
 
 
@@ -92,7 +105,7 @@ h2{
 
 
 .sessoes{
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
 }
 
@@ -103,100 +116,187 @@ h2{
 }
 
 
-.App-traffic-graph{
-  width: 66%;
-}
+  .App-traffic-graph{
+    width: 66%;
+  }
 
-.graph-idem{
-  margin: 2%;
-}
+    .graph-idem{
+      margin: 2%;
+    }
 
 
 
-.App-reports{
-  width: 31%;
-  display: block;
-  /*Relação ao entre os Elementos dentro da div*/
-  align-content: space-between;
+  .App-reports{
+    width: 31%;
+    min-width: 31%;
+    display: block;
+    /*Relação ao entre os Elementos dentro da div*/
+    align-content: space-between;
 
-}
+    /*Solução provisória*/
+    max-height: 30em;
 
-.App-reports h2{
-  margin-left: .5em;
-}
+  }
 
-.reports{
-  padding-left: 4%;
-  padding-right: 4%;
-  height: 75%;
-  max-height: 75%;
-  overflow: auto;
-  border-top: 2px solid #f4f4f4;
-  border-bottom: 2px solid #f4f4f4;
-}
+      .App-reports h2{
+        margin-left: .5em;
+      }
 
-      .report{
-        width: 100%;
-        margin-top: .5em;
-        display: inline-flex;
-        align-items: flex-start;
+      .reports{
+        padding-left: 4%;
+        padding-right: 4%;
+        height: 75%;
+        max-height: 75%;
+        overflow: auto;
+        border-top: 2px solid #f4f4f4;
+        border-bottom: 2px solid #f4f4f4;
+      }
+
+            .report{
+              width: 100%;
+              margin-top: .5em;
+              display: inline-flex;
+              align-items: flex-start;
+              justify-content: space-between;
+            }
+            .report-image{
+              box-sizing: border-box;
+              width: 50px;
+              height: 50px;
+              background-color: #6c6c6c;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 110%;
+              background-image: url('./images/person.jpg');
+              margin-right: 1em;
+              border-radius: 50%;
+            }
+
+            .report-title{
+              font-size: 1.2em;
+              font-family: Roboto;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              font-weight: bold;
+              letter-spacing: normal;
+              color: #6c6c6c;
+              margin-block-end: .5em;
+              margin-block-start: 0;
+            }
+
+            .report-content{
+              width: 70%;
+            }
+
+            .report-time{
+              font-family: Roboto;
+              font-size: .9em;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: rgba(108, 108, 108, 0.5);
+            }
+
+
+      .insert-report{
+        display: flex;
         justify-content: space-between;
-      }
-      .report-image{
-        box-sizing: border-box;
-        width: 50px;
-        height: 50px;
-        background-color: #6c6c6c;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 110%;
-        background-image: url('./images/person.jpg');
-        margin-right: 1em;
-        border-radius: 50%;
+        padding-left: 4%;
+        padding-right: 4%;
+        margin: .5em;
       }
 
-      .report-title{
-        font-size: 1.2em;
-        font-family: Roboto;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
+      .insert-report .in{
+        width: 80%;
+      }
+
+      .insert-report .bt{
         font-weight: bold;
-        letter-spacing: normal;
-        color: #6c6c6c;
-        margin-block-end: .5em;
-        margin-block-start: 0;
-      }
-
-      .report-content{
-        width: 70%;
-      }
-
-      .report-time{
-        font-family: Roboto;
-        font-size: .9em;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: rgba(108, 108, 108, 0.5);
       }
 
 
-.insert-report{
-  display: flex;
-  justify-content: space-between;
-  padding-left: 4%;
-  padding-right: 4%;
-  margin: .5em;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Adaptação para outras resoluções*/
+
+
+@media (max-width: 500px) {
+  .AppDataBase{
+    justify-content: center;
+  }
+  .data{
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+
+
+
+  .sessoes{
+    display: block;   
+  }
+  .sessao{
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+
+  .App-reports{
+    max-height: 100%;
+  }
+
+  .insert-report{
+    padding-bottom: 1em;
+  }
 }
 
-.insert-report .in{
-  width: 80%;
-}
 
-.insert-report .bt{
-  font-weight: bold;
-}
 
+@media (min-width: 501px){
+  @media (max-width: 1000px){
+    .AppDataBase{
+
+    }
+    
+    .data{
+      width: 47%;
+      margin-bottom: 6%;
+    }
+  }
+
+
+  
+  .sessoes{
+    display: block;   
+  }
+  .sessao{
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  .App-reports{
+    max-height: 100%;
+  }
+
+  .insert-report{
+    padding-bottom: 1em;
+  }
+  
+}
