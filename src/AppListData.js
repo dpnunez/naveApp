@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios'
 
 
 
@@ -12,7 +13,7 @@ function AppData(props){
     return(
       <div className={`data`} id={name}>
           <div className='data-image' style={{
-                        backgroundImage: `url(${props.url})`
+                        backgroundImage: `url(/assets/${name}.png)`
                     }}/>
           <div className='data-content'>
             <p className='data-number pData'>{number}</p>
@@ -24,18 +25,36 @@ function AppData(props){
     
 }
 
-function AppListData(props){
+class AppListData extends React.Component {
+  state = {
+    loading: true,
+    information: []
+  }
 
+  componentDidMount () {
+    axios.get('http://localhost:3000/information')
+        .then(response => {
+            this.setState({
+                loading: false,
+                information: response.data
+            })
+            console.log(Object.keys(response.data))
+        })
+        .catch(e => {
+            console.log(e)
+        })
+  }
+
+  render () {
     return (
       <div className='AppDataBase'>
-        {props.dataList.map((data, index) =>
-          <AppData key={data.name} name={data.name} number={data.number} url={data.url}/>
+        {Object.keys(this.state.information).map((data, index) =>
+          <AppData key={data} name={data} number={this.state.information[data]} />
 
         )}
       </div>
     )
   }
-
-
+}
 
 export default AppListData

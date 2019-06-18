@@ -81,19 +81,19 @@ h2{
 
 
       /*Configurando a cor de cada data*/
-      #Visitor{
+      #visitors{
         background-color: #29cb97
       }
 
-      #User{
+      #users{
         background-color: #fec400
       }
 
-      #Sales{
+      #sales{
         background-color: #4c84ff;
       }
 
-      #Order{
+      #orders{
         background-color: #ca66ff;
       }
 
