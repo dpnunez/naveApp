@@ -279,10 +279,8 @@ h2{
       width: 47%;
       margin-bottom: 6%;
     }
-  }
 
-
-  
+    
   .sessoes{
     display: block;   
   }
@@ -298,5 +296,9 @@ h2{
   .insert-report{
     padding-bottom: 1em;
   }
+  }
+
+
+  
   
 }
